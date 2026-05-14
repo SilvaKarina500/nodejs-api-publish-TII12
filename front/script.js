@@ -84,7 +84,7 @@ function atualizarPedido(){
    //Pega 0o id informado e o força a ser um numero
    const id = Number(document.getElementById("idAtualizar").value);
    //pega o novo status do pedido digitado no input
-   const status = document.getElementById("statusAtualizar").valeu;
+   const status = document.getElementById("statusAtualizar").value;
 
    //Envia uma requisição PUT para a API
    fetch("https://nodejs-api-publish-tii12-ugd7.onrender.com/pedidos", {
