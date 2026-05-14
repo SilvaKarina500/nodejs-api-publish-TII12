@@ -66,7 +66,7 @@ function cadastrarPedido() {
    // Depois que o pedido for cadastrado, atualizado a lista na tela
    .then(() => {
       //Limpa os inputs apos o envio do cadastro
-   document.getElementById("cliente").valeu = "";
+   document.getElementById("cliente").value = "";
    document.getElementById("produto").value = "";
 
    //Atualizada a lista na tela
