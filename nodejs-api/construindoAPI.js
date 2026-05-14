@@ -15,7 +15,6 @@ const url = require('url');
 // Simulando um banco 
 let pedidos = [
     {
-
         id: 1,
         cliente: "Fernanda",
         produto: "Tenis",
@@ -182,13 +181,6 @@ const server = http.createServer((req, res) => {
         });
         return;
     };
-
-    
-
-
-
-
-
     res.statusCode = 404; // Not Found = Não encontrada
     // Resposta para o usuário caso ele busque uma rota inexistente
     res.end(JSON.stringify({
