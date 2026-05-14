@@ -9,7 +9,7 @@ lista.innerHTML = "Carregando pedidos...";
 
 //Faz uma requisição GET para a API com a url dela publicada
 //(ou local)
-fetch(xxxxxxxx)
+fetch("https://nodejs-api-publish-tii12-ugd7.onrender.com/pedidos")
 // Converte a resposta da API para JSON
 .then(res => res.json())
 
@@ -46,7 +46,7 @@ function cadastrarPedido() {
 
 
    // Envia uma requisição POST para a API
-   fetch(xxxxxxxxx,{
+   fetch("https://nodejs-api-publish-tii12-ugd7.onrender.com/pedidos",{
       method: "POST",
       // Informa que os dados enviados estão no formato JSON
       headers:{
@@ -87,7 +87,7 @@ function atualizarPedido(){
    const status = document.getElementById("statusAtualizar").valeu;
 
    //Envia uma requisição PUT para a API
-   fetch(xxxxxxxxxx, {
+   fetch("https://nodejs-api-publish-tii12-ugd7.onrender.com/pedidos", {
       method: "PUT",
       headers:{
          'Content-Type': 'application/JSON'
@@ -120,7 +120,7 @@ function atualizarPedido(){
 function removerPedido(){
    const id = Number(document.getElementById("idRemover").value);
 
-   fetch(xxxxxxxxxxx,{
+   fetch("https://nodejs-api-publish-tii12-ugd7.onrender.com/pedidos",{
       method: "DELETE",
       headers:{
          'Content-Type': 'application/JSON'
