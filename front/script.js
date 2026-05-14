@@ -126,7 +126,7 @@ function removerPedido(){
          'Content-Type': 'application/JSON'
       },
      // Envia apenas o id do pedido que será removido
-      boby: JSON.stringify({
+      body: JSON.stringify({
          id: id
       })
    })
